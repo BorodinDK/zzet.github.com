@@ -1,28 +1,5 @@
-{% capture post_or_page_title %}
-  {% if index %}
-    {% if site.titlecase %}
-      {{ post.title | titlecase }}
-    {% else %}
-      {{ post.title }}
-    {% endif %}
-  {% else %}
-    {% if site.titlecase %}
-      {{ page.title | titlecase }}
-    {% else %}
-      {{ page.title }}
-    {% endif %}
-  {% endif %}
-{% endcapture %}
-
-{% capture post_or_page_url %}
-  {{ site.url }}
-  {% if index %}
-    {{ post.url }}
-  {% else %}
-    {{ page.url }}
-  {% endif %}
-{% endcapture %}
-
+{% capture post_or_page_title %}{% if index %}{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}{% else %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}{% endif %}{% endcapture %}
+{% capture post_or_page_url %}{{ site.url }}{% if index %}{{ post.url }}{% else %}{{ page.url }}{% endif %}{% endcapture %}
 <header>
   {% if index %}
     <h1 class="entry-title"><a href="{{ post.url }}">{{ post_or_page_title }}</a></h1>
