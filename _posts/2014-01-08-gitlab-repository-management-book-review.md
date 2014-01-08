@@ -169,7 +169,7 @@ repository management](http://bit.ly/19TbMES). Вот об этой самой �
 ## Updating GitLab
 
 С тех пор, как появилась вот эта
-[штука](https://github.com/gitlabhq/gitlabhq/blob/master/script/upgrade.rb) главу считаю бесполезной. Выпиливаем.
+[штука](https://github.com/gitlabhq/gitlabhq/blob/master/script/upgrade.rb), главу считаю бесполезной. Выпиливаем.
 
 ## Help and Community
 
