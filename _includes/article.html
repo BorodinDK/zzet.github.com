@@ -35,9 +35,7 @@
       {% include post/date.html %}{{ time }}
       {% include post/tags.html %}
       <span class="share-to-weibo">
-        <a href="javascript:void(0)" onclick="window.open('http://share.v.t.qq.com/index.php?c=share&amp;a=index&amp;appkey={{ site.tencent_weibo_appkey }}&amp;title={{ post_or_page_title }} - &amp;url={{ post_or_page_url }}', null, 'width=700,height=680,toolbar=0,status=0')" class="tencent-weibo" title="分享到腾讯微博"></a>
-
-        <a href="javascript:void(0)" onclick="window.open('https://twitter.com/intent/tweet?text={{ post_or_page_title }} - {{ post_or_page_url }}', null, 'width=600,height=300,toolbar=0,status=0')" class="twitter" title="分享到Twitter"></a>
+        <a href="javascript:void(0)" onclick="window.open('https://twitter.com/intent/tweet?text={{ post_or_page_title }} - {{ post_or_page_url }}', null, 'width=600,height=300,toolbar=0,status=0')" class="twitter" title="Twitter"></a>
       </span>
     </p>
   {% endunless %}
