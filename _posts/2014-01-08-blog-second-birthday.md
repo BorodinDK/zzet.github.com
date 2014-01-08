@@ -25,7 +25,7 @@ tags: blog common
 О чем планирую написать в ближайшее время (своего рода TODO list):
 
 - Ansible и как с ним работать
-- Gitlab - Review о книге
+- [Gitlab - Review о книге](http://zzet.org/gitlab/book/review/2014/01/08/gitlab-repository-management-book-review.html)
 - Социальная составляющая прокачки или как себя замотивировать что-то
   сделать
 
