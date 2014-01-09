@@ -22,6 +22,7 @@ Projects:
 - [Digicast](http://digicast.ru)
 - Teleguide
 - Bloom
+- DO
 - [Gitlab Undev edition](https://github.com/Undev/gitlabhq)
 - [MailSandBox](https://github.com/kaize/mail_sandbox)
 - [configus](https://github.com/kaize/configus)
@@ -29,6 +30,7 @@ Projects:
 - [ansible-postgresql-role](https://galaxy.ansibleworks.com/list#/roles/101)
 - [ansible-rbenv-role](https://galaxy.ansibleworks.com/list#/roles/102)
 - [ansible-gitlab-role](https://galaxy.ansibleworks.com/list#/roles/115)
+- [RestApiTutorial.Ru](http://restapitutorial.ru)
 
 Social links:
 
