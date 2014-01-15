@@ -32,6 +32,21 @@ Projects:
 - [ansible-gitlab-role](https://galaxy.ansibleworks.com/list#/roles/115)
 - [RestApiTutorial.Ru](http://restapitutorial.ru)
 
+Skills
+
+- Languages
+  - Ruby
+  - JavaScript
+- Web Frameworks
+  - Ruby on Rails
+- OS
+  - MacOS
+  - linux
+- Editors
+  - vim
+- VCS
+  - git
+
 Social links:
 
 - [Github](https://github.com/zzet)
