@@ -31,6 +31,7 @@ Projects:
 - [ansible-rbenv-role](https://galaxy.ansibleworks.com/list#/roles/102)
 - [ansible-gitlab-role](https://galaxy.ansibleworks.com/list#/roles/115)
 - [RestApiTutorial.Ru](http://restapitutorial.ru)
+- [persey - easy configuration menagement](https://github.com/zzet/persey)
 
 Skills
 
