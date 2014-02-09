@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Git. Просто Git. Лекция 1. Введение."
+date: 2014-02-09 18:18
+meta: true
+comments: true
+categories: git learning undev coursify
+tags: git learning undev coursify
+-
 # Введение #
 
 В рамках первой лекции мы познакомимся с тем, что такое системы управления версиями (мне хотелось рефлекторно в конце добавить `кода`, но это не так. Об этом чуть позже).
