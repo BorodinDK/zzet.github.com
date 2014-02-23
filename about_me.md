@@ -39,6 +39,7 @@ Skills
 - Languages
   - Ruby
   - JavaScript
+  - Go
 - Web Frameworks
   - Ruby on Rails
 - OS
