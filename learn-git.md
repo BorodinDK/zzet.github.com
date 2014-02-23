@@ -34,7 +34,7 @@ tags: git coursify lections
 Итоги
 
 [Лекция](http://zzet.org/)
-[Презентация](http://zzet.org/lection-1.html)
+[Презентация](http://zzet.org/learn-git/lection-1.html)
 
 ## Лекция 2. Основы Git, ветвление в Git
 
@@ -69,7 +69,7 @@ tags: git coursify lections
 Итоги
 
 [Лекция](http://zzet.org/)
-[Презентация](http://zzet.org/lection-2.html)
+[Презентация](http://zzet.org/learn-git/lection-2.html)
 
 ## Лекция 3. Инструменты Git, настройки Git
 
@@ -100,7 +100,7 @@ Git-атрибуты
 Итоги
 
 [Лекция](http://zzet.org/)
-[Презентация](http://zzet.org/lection-3.html)
+[Презентация](http://zzet.org/learn-git/lection-3.html)
 
 
 ## Лекция 4. Распределённый Git, Git на сервере.
@@ -135,7 +135,7 @@ Git-хостинг
 Итоги
 
 [Лекция](http://zzet.org/)
-[Презентация](http://zzet.org/lection-4.html)
+[Презентация](http://zzet.org/learn-git/lection-4.html)
 
 ## Лекция 5. Git изнутри.
 
@@ -158,7 +158,7 @@ Pack-файлы
 Итоги
 
 [Лекция](http://zzet.org/)
-[Презентация](http://zzet.org/lection-5.html)
+[Презентация](http://zzet.org/learn-git/lection-5.html)
 
 ## Лекция 6. Возможые Flow.
 
@@ -173,4 +173,4 @@ Pack-файлы
 Итоги
 
 [Лекция](http://zzet.org/)
-[Презентация](http://zzet.org/lection-6.html)
+[Презентация](http://zzet.org/learn-git/lection-6.html)
