@@ -32,6 +32,7 @@ Projects:
 - [ansible-gitlab-role](https://galaxy.ansibleworks.com/list#/roles/115)
 - [RestApiTutorial.Ru](http://restapitutorial.ru)
 - [persey - easy configuration menagement](https://github.com/zzet/persey)
+- [elasticsearch-git - ElasticSearch integration for git repositories](https://github.com/zzet/elasticsearch-git)
 
 Skills
 
