@@ -33,7 +33,7 @@ tags: git coursify lections
 
 Итоги
 
-[Лекция](http://zzet.org/)
+[Лекция](http://zzet.org/git/learning/undev/coursify/2014/02/09/lection-1-git-course-undev.html)
 [Презентация](http://zzet.org/learn-git/lection-1.html)
 
 ## Лекция 2. Основы Git, ветвление в Git
