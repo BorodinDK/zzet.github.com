@@ -25,8 +25,8 @@ tags: git coursify lections
   * Как получить помощь?
   * Итоги
 
-[Лекция](http://zzet.org/git/learning/undev/coursify/2014/02/09/lection-1-git-course-undev.html)
-[Презентация](http://zzet.org/learn-git/lection-1.html)
+  - [Лекция](http://zzet.org/git/learning/undev/coursify/2014/02/09/lection-1-git-course-undev.html)
+  - [Презентация](http://zzet.org/learn-git/lection-1.html)
 
 ## Лекция 2. Основы Git, ветвление в Git
 
@@ -47,8 +47,8 @@ tags: git coursify lections
   * Перемещение
   * Итоги
 
-[Лекция](http://zzet.org/)
-[Презентация](http://zzet.org/learn-git/lection-2.html)
+  - [Лекция](http://zzet.org/)
+  - [Презентация](http://zzet.org/learn-git/lection-2.html)
 
 ## Лекция 3. Инструменты Git, настройки Git
 
@@ -68,8 +68,8 @@ tags: git coursify lections
   * Пример навязывания политики с помощью Git
   * Итоги
 
-[Лекция](http://zzet.org/)
-[Презентация](http://zzet.org/learn-git/lection-3.html)
+  - [Лекция](http://zzet.org/)
+  - [Презентация](http://zzet.org/learn-git/lection-3.html)
 
 
 ## Лекция 4. Распределённый Git, Git на сервере.
@@ -90,11 +90,10 @@ tags: git coursify lections
     - Bitbucket
     - Gitlab
     - Свой
+  * Итоги
 
-Итоги
-
-[Лекция](http://zzet.org/)
-[Презентация](http://zzet.org/learn-git/lection-4.html)
+  - [Лекция](http://zzet.org/)
+  - [Презентация](http://zzet.org/learn-git/lection-4.html)
 
 ## Лекция 5. Git изнутри.
 
@@ -109,8 +108,8 @@ tags: git coursify lections
   * Обслуживание и восстановление данных
   * Итоги
 
-[Лекция](http://zzet.org/)
-[Презентация](http://zzet.org/learn-git/lection-5.html)
+  - [Лекция](http://zzet.org/)
+  - [Презентация](http://zzet.org/learn-git/lection-5.html)
 
 ## Лекция 6. Возможые Flow.
 
@@ -121,5 +120,5 @@ tags: git coursify lections
   * Сопровождение проекта
   * Итоги
 
-[Лекция](http://zzet.org/)
-[Презентация](http://zzet.org/learn-git/lection-6.html)
+  - [Лекция](http://zzet.org/)
+  - [Презентация](http://zzet.org/learn-git/lection-6.html)
