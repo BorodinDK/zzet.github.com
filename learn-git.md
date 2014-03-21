@@ -47,7 +47,7 @@ tags: git coursify lections
   * Перемещение
   * Итоги
 
-  - [Лекция](http://zzet.org/)
+  - [Лекция](http://zzet.org/git/learning/undev/coursify/2014/02/09/lection-2-git-course-undev.html)
   - [Презентация](http://zzet.org/learn-git/lection-2.html)
 
 ## Лекция 3. Инструменты Git, настройки Git
