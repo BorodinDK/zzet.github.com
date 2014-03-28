@@ -90,7 +90,7 @@ tags: git coursify lections
     - Свой
   * Итоги
 
-  - [Лекция](http://zzet.org/)
+  - [Лекция](http://zzet.org/git/learning/undev/coursify/2014/03/28/lection-4-git-course-undev.html)
   - [Презентация](http://zzet.org/learn-git/lection-4.html)
 
 ## Лекция 5. Git изнутри.
