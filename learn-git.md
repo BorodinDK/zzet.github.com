@@ -79,9 +79,7 @@ tags: git coursify lections
   * Создание открытого SSH-ключа
   * Настраиваем сервер
   * Открытый доступ
-  * GitWeb
-  * Gitosis
-  * Gitolite
+  * GitWeb, Gitosis, Gitolite
   * Git-демон
   * Git-хостинг
     - Github
