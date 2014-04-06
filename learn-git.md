@@ -104,7 +104,7 @@ tags: git coursify lections
   * Обслуживание и восстановление данных
   * Итоги
 
-  - [Лекция](http://zzet.org/)
+  - [Лекция](http://zzet.org/git/learning/undev/coursify/2014/03/28/lection-5-git-course-undev.html)
   - [Презентация](http://zzet.org/learn-git/lection-5.html)
 
 ## Лекция 6. Возможые Flow.
