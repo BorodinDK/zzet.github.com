@@ -115,6 +115,3 @@ tags: git coursify lections
   * Содействие проекту
   * Сопровождение проекта
   * Итоги
-
-  - [Лекция](http://zzet.org/)
-  - [Презентация](http://zzet.org/learn-git/lection-6.html)
