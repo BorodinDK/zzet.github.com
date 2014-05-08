@@ -59,4 +59,5 @@ Social links:
 - [Stackowerflow](http://stackoverflow.com/users/1282049/zzet)
 - [VKontakte](https://vk.com/zzet_org)
 - [Galaxy.Ansible](https://galaxy.ansibleworks.com/list#/users/597)
+- [Coderbits](https://coderbits.com/zzet)
 - [Bitdeli](https://bitdeli.com/zzet)
