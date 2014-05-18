@@ -28,6 +28,7 @@ Projects:
 - [configus](https://github.com/kaize/configus)
 - [pre-commit](https://github.com/jish/pre-commit)
 - [ansible-postgresql-role](https://galaxy.ansibleworks.com/list#/roles/101)
+- [ansible-runit-role](https://galaxy.ansibleworks.com/list#/roles/230)
 - [ansible-rbenv-role](https://galaxy.ansibleworks.com/list#/roles/102)
 - [ansible-gitlab-role](https://galaxy.ansibleworks.com/list#/roles/115)
 - [RestApiTutorial.Ru](http://restapitutorial.ru)
