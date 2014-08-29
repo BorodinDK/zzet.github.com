@@ -9,14 +9,17 @@ tags: git gitlab undev fork gitlab-vagrant elasticsearch-git elasticsearch
 ---
 
 ## About article
+
 I get a lot of mail with questions about our ([Undev](http://undev.ru)) [Gitlab fork](https://github.com/Undev/gitlabhq). And... I so lazy... In this article I try to describe our fork and them features.
 
 If you have some question or can't understand something - please write comments, I'll update article.
 
 ## Start. Gitorious.
+
 At September 2012 I joined to Infrastructure projects in Undev. It was very interesting... but... old Gitorious, Rails 2, ruby 1.8.7ee... Shit. Ok. After some time of terrible work I start discussion with our manager about another system. We have a lot of problems with Gitorious and support of them.
 
 ## Gitlab
+
 Challenge accepted and we start research. At November 2012 we have big (very big) compare table. After some testing Gitlab win and... no... Gitlab do not have some important for us features... Okay. Let's go, Guys! We start new features.
 
 * At first - postgresql support. Yes, I do not like MySQL :)
@@ -29,7 +32,9 @@ Challenge accepted and we start research. At November 2012 we have big (very big
 At May 2013 we have good installation. But with some changes in architecture, about which I'll write later. We run Gitlab in production at May 2013.
 
 ## Most valuable Changes
+
 ### Teams support
+
 In Gitlab 3 we do not have teams. Management of user access in a lot of projects was terrible work and we start **Teams feature**. First version  of this features was not beautiful, some times - hardcoded, and in Gitlab 6 this feature was replaced with Groups by Dmitry Zaporozhets. I agree with them - for little company and teams Team feature is overhead. But we can not abandon Team feature and support them in our form today.
 We make 3 level of user access to projects:
 
@@ -46,6 +51,7 @@ User -> Team -> Group -> Project
 This schema very comfortable for our Managers, Project Masters/Owners and we support them ;)
 
 ### New event model
+
 Then we (with [Andrey Kulakov](https://github.com/Andrew8xx8)) start release **mail notification** feature, we select event-based mail generation. User has subscription on base Entities: Project, Group, Team, User. After create Event, related to base entity on User action we create mail notification based on this Event and async send they. More detailed I'll describe mail notification later. Now about events.
 
 At start we have one huge problem. All events in Gitlab related to project. We has not events for Group or Team or another Entity. Only Project.
@@ -60,7 +66,9 @@ Event(id:          integer,
 	  action:      integer, # Action number.
 	  author_id:   integer)
 ```
+
 And all events described with 9 action constant:
+
 ``` ruby
   CREATED   = 1
   UPDATED   = 2
@@ -89,6 +97,7 @@ Any Entity can be source
 ![Simple example of relation between different entities with project](http://puu.sh/bcPGQ/83a806b906.png)
 
 And rich action description:
+
 ``` ruby
   GENERAL = [
     :created,
@@ -165,17 +174,19 @@ Event can have parent event. For example case:
 	* After push was closed Issue
 
 We create events for any actions in system. But save parent-child relation.
+
 ``` ruby
 Push created |- Event(action: pushed)
              |- Event(action: commented_commit)
              |- Event(action: closed) # for MergeRequest
              |  |- Event(action: created) # Note was created
-		     |     |- Event(action: commented_merge_request)
-		     |
+ 		     |     |- Event(action: commented_merge_request)
+  	     |
              |- Event(action: closed) # for Issue
                 |- Event(action: created) # Note was created
                    |- Event(action: commented_issue)
 ```
+
 Based on this events we can send email in different subscriptions without duplications and research source of some troubles. I think it awesome! :)
 
 After rewrite events we have:
@@ -241,6 +252,9 @@ Now:
 ## Related links
 
 [Fork address (Undev/gitlabhq)](https://github.com/Undev/gitlabhq)
+
 [Gitlab-shell fork for git protocol ability](https://github.com/zzet/gitlab-shell)
+
 [Our vagrant vw for development](https://github.com/zzet/gitlab-wvm)
+
 [Elasticsearch-git gem for Integration with ElasticSearch](https://github.com/zzet/elasticsearch-git)
