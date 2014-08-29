@@ -180,8 +180,8 @@ Push created |- Event(action: pushed)
              |- Event(action: commented_commit)
              |- Event(action: closed) # for MergeRequest
              |  |- Event(action: created) # Note was created
- 		     |     |- Event(action: commented_merge_request)
-  	     |
+             |     |- Event(action: commented_merge_request)
+             |
              |- Event(action: closed) # for Issue
                 |- Event(action: created) # Note was created
                    |- Event(action: commented_issue)
