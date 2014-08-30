@@ -242,14 +242,83 @@ Now:
 ![](http://puu.sh/bcT7s/1132856552.png)
 
 ### Elasticsearch as search engine
+
+What about search functional in Gitlab? 
+
+![](http://puu.sh/bdOe9/dcf7287ea1.png)
+
+In official Gitlab CE we can search:
+
+* Projects
+* Groups (autocomplete)
+* MergeRequests
+* Issues
+* Code in selected repository
+
+Projects, Groups, MergeRequest, Issue - `%like%` query. Code - `git grep`...
+
+At this moment Gitlab core team prefer PostgreSQL. So, in PostgreSQL we have good full-text search, but. We want more flexible search. And code search across all repositories. On this reason we replaced search with ElasticSearch.
+
+Example of results:
+
+We can search in different entities:
+
+![](http://puu.sh/bdOxK/bec6432c97.png)
+
+We can search code across different repositories (as you can see - we can search filter search with different Language)
+
+![](http://puu.sh/bdOB6/0730e13767.png)
+
+Resume: At this moment search available in:
+
+* Project
+	* Name
+	* Path
+	* NamespaceName
+	* Description
+* Group
+	* Name
+	* Path
+	* Description
+* User
+	* Username
+	* Name
+	* etc (if you want)
+* Team
+	* Name
+	* Path
+	* Description
+* MergeRequest
+	* Tilte
+	* Descriptions
+* Issue
+	* Title
+	* Descriptions
+* Code across all repositories
+	* Files by content
+	* Files by file-path and file-name
+* Commits across all repositories
+	* Commit author name, email
+	* Commiter name, email
+	* Commit message
+	* commit sha
+
+For integration with ElasticSearch I wrote [gem](https://github.com/zzet/elasticsearch-git). I tried save interface, but it is impossible without code rewrite.
+
 ### Jenkins integration
+
 ### More performance with websockets
+
 ### Favorited projects
+
 ### Access to files via token
+
 ### Git protocol support
 
 ## Architecture changes
+
 ### Deploy via capistrano
+
 ## Related links
 
 [Fork address (Undev/gitlabhq)](https://github.com/Undev/gitlabhq)
