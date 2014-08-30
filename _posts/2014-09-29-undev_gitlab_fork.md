@@ -330,15 +330,95 @@ We wrote own plugin for Jenkins.
          |- Gitlab parse data and show them in Web UI.
 ```
 
+As result we know - which push broke code and can fix them in short time.
+
+![](http://puu.sh/bdQRg/ed3e73c2ad.png)
+
 ### More performance with websockets
 
 ### Favorited projects
 
+![](http://puu.sh/bdQV1/7aa633d03e.png)
+
+![](http://puu.sh/bdQWb/30a3e9d3e1.png)
+
+![](http://puu.sh/bdQXB/7ab0f31c9b.png)
+
+![](http://puu.sh/bdQZ2/f85ed49f68.png)
+
 ### Access to files via token
+
+![](http://puu.sh/bdR9t/8a6a59f513.png)
+
+![](http://puu.sh/bdRaY/cb3babfc7d.png)
+
+![](http://puu.sh/bdR6d/e20903ecc9.png)
 
 ### Git protocol support
 
+![](http://puu.sh/bdR3f/bd7f7ce770.png)
+
+![](http://puu.sh/bdR21/0e1bbb2df0.png)
+
 ## Architecture changes
+
+Users:
+
+* Git
+	* Run application
+	* Work with code
+* Gitlab
+	* Deploy application
+
+![](http://www.burnetts.com/wp-content/uploads/2012/02/top-secret.jpg)
+```
+.
+├── some_git_home_path
+│   └── git
+│        ├── .ssh
+│        ├── gitlab-shell # symlink to /some/apps_path/gitlab-shell/current
+│        ├── ...
+│        └── repositories
+├── some
+│   └── apps_path
+│         ├── gitlab
+│         │    ├── releases
+│         │    │    ├── release_1
+│         │    │    ├── release_2
+│         │    │    ├── release_3
+│         │    │    ├── release_4
+│         │    │    └── release_5 # here only code
+│         │    ├── shared
+│         │    │    ├── bin
+│         │    │    ├── bundle
+│         │    │    ├── cache
+│         │    │    ├── gitlab-satellites
+│         │    │    ├── log
+│         │    │    ├── pids
+│         │    │    ├── public
+│         │    │    ├── .secret
+│         │    │    ├── system
+│         │    │    ├── tmp
+│         │    │    └── uploads
+│         │    └── current # symlink to last release
+│         └──  gitlab-shell
+│         │    ├── releases
+│         │    │    ├── release_1
+│         │    │    ├── release_2
+│         │    │    ├── release_3
+│         │    │    ├── release_4
+│         │    │    └── release_5
+│         │    └── current # symlink to last release
+└── some_services_path
+     ├── gitlab-resque-main
+     ├── gitlab-resque-gitlab-shell
+     ├── gitlab-resque-main
+     ├── gitlab-resque-elasticsearch
+     ├── gitlab-web-unicorn
+     ├── gitlab-web-unicorn-api
+     ├── gitlab-web-faye
+     └── etc      
+```
 
 ### Deploy via capistrano
 
