@@ -20,7 +20,13 @@ At September 2012 I joined to Infrastructure projects in Undev. It was very inte
 
 ## Gitlab
 
-Challenge accepted and we started research. At November 2012 we had big (very big) table with comparison difficult systems. . After some testing Gitlab wined and... no... Gitlab do not had some important for us features... Okay. Let's go, Guys! We started new features.
+Challenge accepted and we started research. At November 2012 we had big (very big) table with comparison difficult systems. . After some testing Gitlab wined and... 
+
+No!!!... Gitlab do not had some important for us features... 
+
+![](http://i.imgur.com/kACvxT7.jpg)
+
+Okay. Let's go, Guys! We started new features.
 
 * At first - postgresql support. Yes, I do not like MySQL :)
 * Migration script from Gitorious to Gitlab
@@ -207,6 +213,7 @@ Our workflow:
 	* Group
 	* Team
 	* User
+	* 
 ![](http://puu.sh/bcRvH/ae02e0d349.png)
 * User can edit detailed settings for any subscriptions
 ![](http://puu.sh/bcRpA/90114af5ae.png)
@@ -306,6 +313,22 @@ Resume: At this moment search available in:
 For integration with ElasticSearch I wrote [gem](https://github.com/zzet/elasticsearch-git). I tried save interface, but it is impossible without code rewrite.
 
 ### Jenkins integration
+
+![](http://puu.sh/bdQdN/d390f1fbaa.png)
+
+![](http://puu.sh/bdQfS/8598e59bc9.png)
+
+![](http://puu.sh/bdQhr/c6629b390d.png)
+
+We wrote own plugin for Jenkins.
+
+```
+-> User pushed code
+   |- Gitlab run services hooks
+     |- Gitlab service select data and send them to Jenkins
+       |- Jenkins run build and after them send build data JSON to Gitlab
+         |- Gitlab parse data and show them in Web UI.
+```
 
 ### More performance with websockets
 
