@@ -371,6 +371,7 @@ Users:
 	* Deploy application
 
 ![](http://www.burnetts.com/wp-content/uploads/2012/02/top-secret.jpg)
+
 ```
 .
 ├── some_git_home_path
