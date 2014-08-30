@@ -10,17 +10,17 @@ tags: git gitlab undev fork gitlab-vagrant elasticsearch-git elasticsearch
 
 ## About article
 
-I get a lot of mail with questions about our ([Undev](http://undev.ru)) [Gitlab fork](https://github.com/Undev/gitlabhq). And... I so lazy... In this article I try to describe our fork and them features.
+I get a lot of mail with questions about our ([Undev](http://undev.ru)) [Gitlab fork](https://github.com/Undev/gitlabhq). And... I so lazy... In this article I try to describe them and main features.
 
 If you have some question or can't understand something - please write comments, I'll update article.
 
 ## Start. Gitorious.
 
-At September 2012 I joined to Infrastructure projects in Undev. It was very interesting... but... old Gitorious, Rails 2, ruby 1.8.7ee... Shit. Ok. After some time of terrible work I start discussion with our manager about another system. We have a lot of problems with Gitorious and support of them.
+At September 2012 I joined to Infrastructure projects in Undev. It was very interesting... but... old Gitorious, Rails 2, ruby 1.8.7ee... Shit. Ok. After some time of terrible work I started discussion with our manager about another system. We have a lot of problems with Gitorious and support of them.
 
 ## Gitlab
 
-Challenge accepted and we start research. At November 2012 we have big (very big) compare table. After some testing Gitlab win and... no... Gitlab do not have some important for us features... Okay. Let's go, Guys! We start new features.
+Challenge accepted and we started research. At November 2012 we had big (very big) table with comparison difficult systems. . After some testing Gitlab wined and... no... Gitlab do not had some important for us features... Okay. Let's go, Guys! We started new features.
 
 * At first - postgresql support. Yes, I do not like MySQL :)
 * Migration script from Gitorious to Gitlab
@@ -29,13 +29,14 @@ Challenge accepted and we start research. At November 2012 we have big (very big
 * Snippets
 * etc.
 
-At May 2013 we have good installation. But with some changes in architecture, about which I'll write later. We run Gitlab in production at May 2013.
+At May 2013 we had good installation. But with some changes in architecture, about which I'll write later. We run Gitlab in production at May 2013.
 
 ## Most valuable Changes
 
 ### Teams support
 
-In Gitlab 3 we do not have teams. Management of user access in a lot of projects was terrible work and we start **Teams feature**. First version  of this features was not beautiful, some times - hardcoded, and in Gitlab 6 this feature was replaced with Groups by Dmitry Zaporozhets. I agree with them - for little company and teams Team feature is overhead. But we can not abandon Team feature and support them in our form today.
+In Gitlab 3 we do not had teams. Management of user access in a lot of projects was terrible work and we started **Teams feature**. First version  of this feature was not beautiful, some times - hardcoded, and in Gitlab 6 this feature was replaced with Groups by Dmitry Zaporozhets. I agree with them - for little company and teams - Team feature is overhead. But we can not abandon Team feature and support them in our implementation today.
+
 We make 3 level of user access to projects:
 
 * Add user directly to project
@@ -52,9 +53,9 @@ This schema very comfortable for our Managers, Project Masters/Owners and we sup
 
 ### New event model
 
-Then we (with [Andrey Kulakov](https://github.com/Andrew8xx8)) start release **mail notification** feature, we select event-based mail generation. User has subscription on base Entities: Project, Group, Team, User. After create Event, related to base entity on User action we create mail notification based on this Event and async send they. More detailed I'll describe mail notification later. Now about events.
+Then we (with [Andrey Kulakov](https://github.com/Andrew8xx8)) started **mail notification** feature, we selected event-based mail generation way. User has subscription on base Entities: **Project**, **Group**, **Team**, **User**. After create Event on User action we create mail notifications, based on this Event, and async send they. More detailed I'll describe mail notification later. Now about events.
 
-At start we have one huge problem. All events in Gitlab related to project. We has not events for Group or Team or another Entity. Only Project.
+At beginning we had one huge problem. All events in Gitlab related to project. We had not events for Group or Team or another Entity. Only Project.
 
 ``` ruby
 Event(id:          integer,
@@ -80,11 +81,11 @@ And all events described with 9 action constant:
   JOINED    = 8 # User joined project
   LEFT      = 9 # User left project
 ```
-So, it was problem and we start new Events.
+So, it was a problem and we started **new Events** feature.
 
-We has next requirements:
+We had next requirements:
 
-* Any entity in system may be Event target (entity, related to which was created event)
+* Any entity in system can be Event target (entity, related to which was created event)
 * Any entity can be Event source (entity, which triggered event)
 * Ability to describe action with human like name
 * Store event data to future usage of them
@@ -96,7 +97,7 @@ Any entity can be target
 Any Entity can be source
 ![Simple example of relation between different entities with project](http://puu.sh/bcPGQ/83a806b906.png)
 
-And rich action description:
+And rich action description (part or them):
 
 ``` ruby
   GENERAL = [
@@ -169,9 +170,9 @@ And rich action description:
 Event can have parent event. For example case:
 
 * User pushed code to server
-	* After was created note
-	* After push was closed MergeRequest
-	* After push was closed Issue
+	* After push was created note
+	* And was closed MergeRequest
+	* And was closed Issue
 
 We create events for any actions in system. But save parent-child relation.
 
@@ -187,17 +188,17 @@ Push created |- Event(action: pushed)
                    |- Event(action: commented_issue)
 ```
 
-Based on this events we can send email in different subscriptions without duplications and research source of some troubles. I think it awesome! :)
+Based on this events we can send email for different subscriptions without duplications and research source of some troubles. I think it awesome! :)
 
 After rewrite events we have:
 
-* Ability detect who and what doing in Gitlab on fuckups
+* Ability detect who and what was doing in Gitlab on fuckups
 * Full information dashboard for Main and Project, Group, Team, User pages.
 * Flexible mail subscriptions with notifications
 * Ability to send mail digests
 
 ### Awesome mail notifications
-After rewriting events we create own mail notifications.
+After rewriting events we created own mail notifications.
 
 Our workflow:
 
@@ -212,13 +213,13 @@ Our workflow:
 * Another user do something in Gitlab
 * After user actions - Gitlab trigger event create, and we have tree of events
 * On created events base we create notifications for subscribers
-* And send mails for subscribers
+* And send mails to subscribers
 
 At this moment we have more 100 different mails for different cases.
 And can be more :)
 
-TODO: Our plans create notification page with option to show notifications or send them on email.
-TODO: Add ability to subscribe on MergeRequest and Issue
+**TODO**: Our plans create notification page with option to show notifications or send them on email.
+**TODO**: Add ability to subscribe on MergeRequest and Issue
 
 ### New Services logic
 Gitlab has integration with different services and it's OK, but it's ok for them, as SaaS.
