@@ -27,12 +27,12 @@ Projects:
 - [MailSandBox](https://github.com/kaize/mail_sandbox)
 - [configus](https://github.com/kaize/configus)
 - [pre-commit](https://github.com/jish/pre-commit)
-- [ansible-postgresql-role](https://galaxy.ansibleworks.com/list#/roles/101)
+- Ansible PostgreSQL role [description](http://zzet.org/ansible-postgresql-role), [role on Galaxy](https://galaxy.ansibleworks.com/list#/roles/101)
 - [ansible-runit-role](https://galaxy.ansibleworks.com/list#/roles/230)
-- [ansible-rbenv-role](https://galaxy.ansibleworks.com/list#/roles/102)
+- Ansible rbenv role [description](http://zzet.org/ansible-rbenv-role/), [role on Galaxy](https://galaxy.ansibleworks.com/list#/roles/102)
 - [ansible-gitlab-role](https://galaxy.ansibleworks.com/list#/roles/115)
 - [RestApiTutorial.Ru](http://restapitutorial.ru)
-- [persey - easy configuration menagement](https://github.com/zzet/persey)
+- Persey - easy configuration management [description](http://zzet.org/persey), [repository](https://github.com/zzet/persey)
 - [elasticsearch-git - ElasticSearch integration for git repositories](https://github.com/zzet/elasticsearch-git)
 
 Skills
