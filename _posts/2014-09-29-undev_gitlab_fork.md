@@ -450,13 +450,13 @@ Users:
 │         │    │    └── uploads
 │         │    └── current # symlink to last release
 │         └──  gitlab-shell
-│         │    ├── releases
-│         │    │    ├── release_1
-│         │    │    ├── release_2
-│         │    │    ├── release_3
-│         │    │    ├── release_4
-│         │    │    └── release_5
-│         │    └── current # symlink to last release
+│              ├── releases
+│              │    ├── release_1
+│              │    ├── release_2
+│              │    ├── release_3
+│              │    ├── release_4
+│              │    └── release_5
+│              └── current # symlink to last release
 └── some_services_path
      ├── gitlab-resque-main
      ├── gitlab-resque-gitlab-shell
