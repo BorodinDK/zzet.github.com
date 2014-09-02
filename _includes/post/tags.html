@@ -3,9 +3,9 @@
 <span class="tags">
   {% if tags_len == '1' %}{{ 'Tag:' }}{% else %}{{ 'Tags:' }}{% endif %}
   {% if post %}
-    {{ post.tags | tag_links }}
+    {{ post.tags | array_to_sentence_string }}
   {% else %}
-    {{ page.tags | tag_links }}
+    {{ page.tags | array_to_sentence_string }}
   {% endif %}
 </span>
 {% endunless %}
