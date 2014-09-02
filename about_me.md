@@ -42,6 +42,7 @@ Skills
   - JavaScript
   - Go
   - Python
+  - Rust
 - Web Frameworks
   - Ruby on Rails
 - OS
