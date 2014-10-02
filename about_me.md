@@ -11,7 +11,8 @@ tags: me zzet
 
 Work:
 
-- 2012 - now: [Undev](http://undev.ru)
+- 2014 - now: [COUB](http://coub.com)
+- 2012 - 2014: [Undev](http://undev.ru)
 - 2011 - 2012: [IT-Keeper](http://itkeeper.ru/)
 - 2011 - 2011: Скайнет
 - 2007 - 2011: [UlCTT](http://ctt.ulstu.ru)
