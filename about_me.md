@@ -19,7 +19,7 @@ Work:
 
 Projects:
 
-- ...
+- [Coub](http://coub.com)
 - [Digicast](http://digicast.ru)
 - Teleguide
 - Bloom
@@ -40,6 +40,7 @@ Skills
 
 - Languages
   - Ruby
+  - Erlang
   - JavaScript
   - Go
   - Python
