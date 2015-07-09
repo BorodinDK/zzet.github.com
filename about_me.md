@@ -45,6 +45,7 @@ Skills
   - Go
   - Python
   - Rust
+  - Node.js
 - Databases
   - PostgreSQL
   - MySQL
