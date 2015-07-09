@@ -45,6 +45,11 @@ Skills
   - Go
   - Python
   - Rust
+- Databases
+  - PostgreSQL
+  - MySQL
+  - Redis
+  - MongoDB
 - Web Frameworks
   - Ruby on Rails
 - OS
