@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "Война в Galaxy Legend"
 date: 2015-07-09 15:58
 meta: true
