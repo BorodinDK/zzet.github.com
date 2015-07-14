@@ -63,6 +63,7 @@ Skills
 
 Social links:
 
+- [![Stack Share](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/zzet/me)
 - [Github](https://github.com/zzet)
 - [Twitter](https://twitter.com/zzetorg)
 - [Facebook](https://www.facebook.com/andrew.kumanyaev)
