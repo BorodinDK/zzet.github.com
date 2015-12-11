@@ -11,7 +11,7 @@ tags: me zzet
 
 Work:
 
-- 2014 - now: [COUB](http://coub.com)
+- 2014 - 2015: [COUB](http://coub.com)
 - 2012 - 2014: [Undev](http://undev.ru)
 - 2011 - 2012: [IT-Keeper](http://itkeeper.ru/)
 - 2011 - 2011: Скайнет
@@ -19,6 +19,7 @@ Work:
 
 Projects:
 
+- [LensHQ](http://lenshq.io)
 - [Coub](http://coub.com)
 - [Digicast](http://digicast.ru)
 - Teleguide
@@ -51,6 +52,7 @@ Skills
   - MySQL
   - Redis
   - MongoDB
+  - Druid
 - Web Frameworks
   - Ruby on Rails
 - OS
